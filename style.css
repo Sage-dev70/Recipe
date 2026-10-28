@@ -1,0 +1,538 @@
+* {
+  box-sizing: border-box;
+  }
+
+body {
+margin: 0;
+padding: 0;
+font-family: Arial, sans-serif;
+background-color: floralwhite;
+color: darkslategray;
+line-height: 1.6;
+}
+
+img {
+max-width: 100%;
+display: block;
+}
+
+a {
+text-decoration: none;
+}
+
+/* HOMEPAGE HEADER */
+.rf-header {
+display: flex;
+justify-content: space-between;
+align-items: center;
+flex-wrap: wrap;
+padding: 15px;
+background-color: white;
+border-bottom: 1px solid whitesmoke;
+}
+
+.rf-logo {
+display: flex;
+align-items: center;
+gap: 8px;
+color: darkgreen;
+font-size: 18px;
+font-weight: bold;
+}
+
+.rf-logo-symbol {
+font-size: 25px;
+}
+
+.rf-menu-toggle {
+display: none;
+}
+
+.rf-menu-button {
+display: flex;
+flex-direction: column;
+gap: 5px;
+cursor: pointer;
+padding: 5px;
+}
+
+.rf-menu-button span {
+display: block;
+width: 25px;
+height: 3px;
+background-color: darkgreen;
+border-radius: 3px;
+}
+
+.rf-navigation {
+display: none;
+flex-direction: column;
+width: 100%;
+gap: 8px;
+margin-top: 15px;
+}
+
+.rf-menu-toggle:checked ~ .rf-navigation {
+display: flex;
+}
+
+.rf-navigation a {
+color: darkslategray;
+display: block;
+padding: 10px;
+text-align: center;
+}
+
+.rf-navigation a:hover {
+background-color: honeydew;
+color: green;
+}
+
+/* BUTTONS */
+.rf-button {
+display: inline-block;
+padding: 12px 24px;
+background-color: darkgreen;
+color: white;
+border-radius: 6px;
+font-weight: bold;
+}
+
+.rf-button:hover {
+background-color: seagreen;
+}
+
+/* HOMEPAGE HERO */
+.rf-hero {
+display: flex;
+flex-direction: column;
+gap: 30px;
+padding: 45px 6%;
+align-items: center;
+}
+
+.rf-hero-text {
+width: 100%;
+}
+
+.rf-hero-text h1 {
+color: darkgreen;
+font-size: 40px;
+line-height: 1.2;
+margin-top: 0;
+margin-bottom: 20px;
+}
+
+.rf-hero-text h1 span {
+color: #d98236;
+}
+
+.rf-hero-text p {
+color: dimgray;
+font-size: 17px;
+margin-bottom: 25px;
+}
+
+.rf-hero-image {
+width: 100%;
+}
+
+.rf-hero-image img {
+width: 100%;
+height: 300px;
+object-fit: cover;
+border-radius: 14px;
+}
+
+/* SECTION SPACING */
+.rf-section-padding {
+padding: 45px 6%;
+}
+
+.rf-section-title {
+text-align: left;
+color: darkgreen;
+font-size: 36px;
+margin-top: 0;
+margin-bottom: 30px;
+}
+
+/* BENEFITS */
+.rf-benefits {
+background-color: floralwhite;
+text-align: left;
+}
+
+.rf-benefits-grid {
+display: grid;
+grid-template-columns: 1fr;
+gap: 20px;
+}
+
+.rf-benefit {
+padding: 15px 0;
+background-color: transparent;
+border: none;
+border-radius: 0;
+}
+
+.rf-benefit-icon {
+width: 65px;
+height: 65px;
+display: flex;
+justify-content: center;
+align-items: center;
+margin: 0 0 20px;
+border-radius: 24px;
+background-color: white;
+}
+
+.rf-benefit-icon.rf-orange {
+background-color: moccasin;
+}
+
+.rf-benefit-icon.rf-green {
+background-color: honeydew;
+}
+
+.rf-benefit-icon.rf-purple {
+background-color: lavender;
+}
+
+.rf-benefit h3 {
+color: darkgreen;
+font-size: 30px;
+line-height: 1.3;
+margin-top: 0;
+margin-bottom: 20px;
+text-align: left;
+}
+
+.rf-benefit p {
+color: dimgray;
+font-size: 20px;
+line-height: 1.6;
+margin-top: 0;
+margin-bottom: 15px;
+text-align: left;
+}
+
+/* REAL LIFE SECTION */
+.rf-real-life {
+display: flex;
+flex-direction: column;
+gap: 25px;
+padding: 45px 6%;
+align-items: center;
+}
+
+.rf-real-life-text {
+width: 100%;
+}
+
+.rf-real-life-text h2 {
+color: darkgreen;
+font-size: 30px;
+margin-top: 0;
+}
+
+.rf-real-life-text p {
+color: dimgray;
+}
+
+.rf-real-life-image {
+width: 100%;
+height: 280px;
+object-fit: cover;
+border-radius: 12px;
+}
+
+/* CALL TO ACTION */
+.rf-cta-section {
+padding: 50px 25px;
+margin: 25px;
+text-align: center;
+background-color: #E9F0E9;
+border-radius: 20px;
+}
+
+.rf-cta-section h2 {
+color: darkgreen;
+font-size: 34px;
+line-height: 1.3;
+margin-top: 0;
+}
+
+.rf-cta-section p {
+color: dimgray;
+margin-bottom: 25px;
+}
+
+/* HOMEPAGE FOOTER */
+.rf-footer {
+background-color: floralwhite;
+color: darkgreen;
+text-align: center;
+padding: 30px 20px;
+}
+
+.rf-footer-logo {
+color: darkgreen;
+font-size: 20px;
+font-weight: bold;
+}
+
+.rf-social-links {
+display: flex;
+justify-content: center;
+align-items: center;
+gap: 22px;
+margin: 20px 0;
+}
+
+.rf-social-links a {
+color: darkgreen;
+font-size: 28px;
+}
+
+.rf-social-links a:hover {
+color: seagreen;
+}
+
+.rf-footer p {
+color: darkslategray;
+margin-bottom: 0;
+}
+
+/* RECIPES INTRO */
+.rf-recipes-intro {
+text-align: center;
+padding: 30px 15px 15px;
+max-width: 800px;
+margin: auto;
+}
+
+.rf-recipes-intro h1 {
+color: darkgreen;
+font-size: 28px;
+margin-bottom: 10px;
+}
+
+.rf-recipes-intro p {
+color: dimgray;
+font-size: 14px;
+}
+
+/* SEARCH AND FILTERS */
+.rf-recipe-tools {
+padding: 15px;
+display: flex;
+justify-content: space-between;
+align-items: center;
+flex-wrap: wrap;
+gap: 15px;
+}
+
+.rf-filter-options {
+display: flex;
+gap: 10px;
+flex-wrap: wrap;
+}
+
+.rf-filter-options select {
+padding: 9px;
+border: 1px solid lightgray;
+border-radius: 6px;
+background-color: white;
+}
+
+.rf-search-form {
+display: flex;
+gap: 8px;
+}
+
+.rf-search-form input {
+padding: 10px;
+border: 1px solid lightgray;
+border-radius: 6px;
+}
+
+.rf-search-form button {
+padding: 10px 15px;
+background-color: darkgreen;
+color: white;
+border: none;
+border-radius: 6px;
+}
+
+/* RECIPE CARDS */
+.rf-recipe-grid {
+display: grid;
+grid-template-columns: repeat(3, minmax(0, 1fr));
+gap: 20px;
+padding: 20px;
+}
+
+.rf-recipe-card {
+background-color: white;
+border: 1px solid whitesmoke;
+border-radius: 10px;
+overflow: hidden;
+}
+
+.rf-recipe-card img {
+width: 100%;
+height: 180px;
+object-fit: cover;
+display: block;
+}
+
+.rf-recipe-info {
+padding: 12px;
+}
+
+.rf-recipe-info h2 {
+color: darkslategray;
+font-size: 16px;
+margin: 0 0 8px;
+}
+
+.rf-recipe-info p {
+color: dimgray;
+font-size: 12px;
+margin-bottom: 12px;
+}
+
+.rf-recipe-meta {
+display: flex;
+flex-wrap: wrap;
+gap: 8px;
+font-size: 11px;
+margin-bottom: 12px;
+}
+
+.rf-recipe-details summary {
+background-color: darkgreen;
+color: white;
+text-align: center;
+padding: 9px;
+border-radius: 20px;
+cursor: pointer;
+list-style: none;
+font-size: 12px;
+}
+
+.rf-recipe-details summary:hover {
+background-color: seagreen;
+}
+
+.rf-recipe-expanded {
+padding: 10px 0;
+font-size: 13px;
+}
+
+/* RECIPES FOOTER */
+.rf-site-footer {
+background-color: floralwhite;
+color: darkgreen;
+display: flex;
+justify-content: space-between;
+align-items: center;
+flex-wrap: wrap;
+padding: 25px;
+margin-top: 30px;
+}
+
+.rf-footer-socials {
+display: flex;
+gap: 15px;
+}
+
+.rf-footer-socials a {
+color: darkgreen;
+font-size: 18px;
+}
+
+.rf-footer-socials a:hover {
+color: seagreen;
+}
+
+/* RECIPES HEADER */
+.rf-recipes-header {
+display: flex;
+justify-content: space-between;
+align-items: center;
+gap: 20px;
+padding: 18px 5%;
+background-color: floralwhite;
+border-bottom: 1px solid whitesmoke;
+flex-wrap: wrap;
+max-width: 100%;
+}
+
+/* RECIPES LOGO */
+.rf-recipes-header .rf-brand {
+display: flex;
+align-items: center;
+gap: 8px;
+color: darkslategray;
+font-size: 18px;
+font-weight: bold;
+white-space: nowrap;
+}
+
+.rf-brand-icon {
+font-size: 25px;
+}
+
+/* RECIPES MENU */
+.rf-recipe-menu-toggle {
+display: none;
+}
+
+.rf-menu-icon {
+display: none;
+flex-direction: column;
+gap: 5px;
+cursor: pointer;
+}
+
+.rf-menu-icon span {
+display: block;
+width: 25px;
+height: 3px;
+background-color: darkslategray;
+border-radius: 3px;
+}
+
+/* RECIPES NAVIGATION */
+.rf-site-nav {
+display: flex;
+align-items: center;
+justify-content: center;
+flex-wrap: wrap;
+max-width: 100%;
+gap: 15px;
+}
+
+.rf-site-nav a {
+color: darkslategray;
+font-size: 14px;
+}
+
+.rf-site-nav a:hover,
+.rf-site-nav a.rf-active {
+color: seagreen;
+}
+
+.rf-site-nav .rf-nav-button {
+padding: 12px 18px;
+background-color: darkslategray;
+color: white;
+border-radius: 7px;
+}
+
+.rf-site-nav .rf-nav-button:hover {
+background-color: seagreen;
+color: white;
+}
